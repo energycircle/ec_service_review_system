@@ -90,6 +90,62 @@ function ec_service_review_system_node_info() {
 function ec_service_review_system_rdf_default_mappings() {
   $schemaorg = array();
 
+  // Exported RDF mapping: sreview
+  $schemaorg['entityform']['sreview'] = array(
+    'field_sreview_step1' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_email' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_name' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_city' => array(
+      'predicates' => array(),
+    ),
+    'field_testimonial_city' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_step2' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_services' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_step3' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_ratinglabels' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_rating' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_step4' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_review' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_zipcode' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_tags' => array(
+      'predicates' => array(),
+      'type' => 'rel',
+    ),
+    'field_send_high_rating_followup_' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_send_email' => array(
+      'predicates' => array(),
+    ),
+    'field_sreview_email_sent' => array(
+      'predicates' => array(),
+    ),
+  );
+
   // Exported RDF mapping: sreview_site
   $schemaorg['node']['sreview_site'] = array(
     'rdftype' => array(
@@ -192,6 +248,14 @@ function ec_service_review_system_rdf_default_mappings() {
  */
 function ec_service_review_system_weight_features_default_settings() {
   $settings = array();
+
+  $settings['review_site'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
 
   $settings['sreview_site'] = array(
     'enabled' => 0,
